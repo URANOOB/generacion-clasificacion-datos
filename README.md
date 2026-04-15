@@ -1,171 +1,147 @@
 # Generacion y clasificacion de datos
 
-Proyecto academico desarrollado en Java para el modulo **Conceptos Fundamentales de Programacion** del Politecnico Grancolombiano.
+Este proyecto fue realizado en **Java** usando **Eclipse**.
 
-Esta version corresponde a la **Entrega 2 - Semana 5**. El proyecto ya cuenta con una version preliminar completa: genera archivos planos de prueba, lee esos archivos y crea reportes ordenados de ventas por vendedor y productos vendidos.
+La idea del proyecto es generar archivos de prueba con datos de productos, vendedores y ventas. Luego se leen esos archivos para crear reportes que muestran cuanto vendio cada vendedor y que productos se vendieron mas.
 
-## Objetivo
+## Entrega 2 - Semana 5
 
-Procesar informacion comercial almacenada en archivos de texto plano para clasificar:
+En la entrega anterior el proyecto estaba enfocado principalmente en generar archivos planos.
 
-- Vendedores por dinero recaudado, de mayor a menor.
-- Productos por cantidad vendida, de mayor a menor.
+Para esta entrega se avanzo un poco mas y ya se agrego una parte preliminar del programa completo. Ahora el proyecto no solo genera los datos, sino que tambien los lee y crea reportes.
 
-El proyecto trabaja sin pedir datos por consola, tal como lo solicita el documento guia. Toda la informacion se toma desde la carpeta `files`.
+## Que hace el proyecto
 
-## Tecnologias utilizadas
+- Genera productos de prueba.
+- Genera vendedores de prueba.
+- Genera ventas por cada vendedor.
+- Lee los archivos generados.
+- Calcula el dinero recaudado por cada vendedor.
+- Calcula la cantidad vendida de cada producto.
+- Genera reportes en archivos CSV.
+
+## Tecnologias usadas
 
 - Java 8.
-- Eclipse IDE for Java Developers.
-- Archivos planos `.txt`.
-- Reportes `.csv`.
-- Git y GitHub para control de versiones.
+- Eclipse IDE.
+- Archivos de texto `.txt`.
+- Archivos `.csv`.
+- Git y GitHub.
 
-## Estructura del proyecto
+## Archivos principales
 
 ```text
-GeneracionClasificacionDatos/
-+-- src/
-|   +-- co/edu/poligran/proyecto/
-|       +-- DataRepository.java
-|       +-- GenerateInfoFiles.java
-|       +-- Product.java
-|       +-- Salesman.java
-|       +-- main.java
-+-- files/
-|   +-- products.txt
-|   +-- salesmen_info.txt
-|   +-- sales_*.txt
-|   +-- products_report.csv
-|   +-- salesmen_report.csv
-+-- entrega_2_semana_5.txt
-+-- DIFERENCIAS_SEMANA_5.md
-+-- .classpath
-+-- .project
-+-- README.md
+src/co/edu/poligran/proyecto/
+  DataRepository.java
+  GenerateInfoFiles.java
+  Product.java
+  Salesman.java
+  main.java
+
+files/
+  products.txt
+  salesmen_info.txt
+  sales_*.txt
+  products_report.csv
+  salesmen_report.csv
 ```
 
-## Clases principales
+## Como se ejecuta
 
-### `GenerateInfoFiles`
+Primero se debe ejecutar la clase:
 
-Clase ejecutable encargada de crear los archivos de entrada del proyecto.
+```text
+GenerateInfoFiles
+```
 
-Al ejecutarla genera:
+Esta clase crea los archivos de prueba dentro de la carpeta `files`.
 
-- `files/products.txt`
-- `files/salesmen_info.txt`
-- Un archivo `sales_*.txt` por cada vendedor generado.
+Despues se ejecuta la clase:
 
-Tambien limpia archivos `sales_*.txt` anteriores antes de crear una nueva muestra, para evitar que queden ventas antiguas mezcladas con los vendedores actuales.
+```text
+main
+```
 
-### `main`
+Esta clase lee los archivos y genera los reportes.
 
-Clase ejecutable encargada de procesar los archivos generados.
+## Ejemplo de productos
 
-Al ejecutarla genera:
-
-- `files/salesmen_report.csv`
-- `files/products_report.csv`
-
-Esta clase valida formatos basicos, vendedores no registrados, productos inexistentes y cantidades negativas.
-
-## Flujo de ejecucion en Eclipse
-
-1. Abrir Eclipse.
-2. Importar el proyecto como proyecto Java existente.
-3. Ejecutar `co.edu.poligran.proyecto.GenerateInfoFiles`.
-4. Verificar que en `files` se creen o actualicen los archivos de entrada.
-5. Ejecutar `co.edu.poligran.proyecto.main`.
-6. Revisar los reportes generados en la carpeta `files`.
-
-## Formato de archivos de entrada
-
-### Productos: `products.txt`
-
-```csv
+```text
 P001;Teclado;138714,00
 P002;Mouse;191948,00
 P003;Monitor;50922,00
 ```
 
-Formato:
+El formato usado es:
 
 ```text
-IDProducto;NombreProducto;PrecioPorUnidad
+IDProducto;NombreProducto;Precio
 ```
 
-### Vendedores: `salesmen_info.txt`
+## Ejemplo de vendedores
 
-```csv
+```text
 CC;83566791;Daniela;Lopez
 CE;72791908;Paula;Rodriguez
 TI;70228856;Felipe;Morales
 ```
 
-Formato:
+El formato usado es:
 
 ```text
-TipoDocumento;NumeroDocumento;Nombres;Apellidos
+TipoDocumento;NumeroDocumento;Nombre;Apellido
 ```
 
-### Ventas por vendedor: `sales_*.txt`
+## Ejemplo de ventas
 
-```csv
+```text
 CC;83566791
 P010;5;
 P001;9;
 P003;19;
 ```
 
-Formato:
-
-```text
-TipoDocumento;NumeroDocumento
-IDProducto;CantidadVendida;
-```
+La primera linea identifica al vendedor. Las demas lineas indican el producto vendido y la cantidad.
 
 ## Reportes generados
 
-### `salesmen_report.csv`
+### Reporte de vendedores
 
-Reporte de vendedores ordenado de mayor a menor segun el dinero recaudado.
+El archivo `salesmen_report.csv` muestra los vendedores ordenados desde el que recaudo mas dinero hasta el que recaudo menos.
 
-```csv
+Ejemplo:
+
+```text
 Laura Hernandez;6336035.00
 Julian Suarez;6112755.00
 Felipe Morales;4779938.00
-Daniela Lopez;4026386.00
-Paula Rodriguez;2312137.00
 ```
 
-### `products_report.csv`
+### Reporte de productos
 
-Reporte de productos ordenado de mayor a menor segun la cantidad vendida.
+El archivo `products_report.csv` muestra los productos ordenados por cantidad vendida.
 
-```csv
+Ejemplo:
+
+```text
 Monitor;50922.00;73
 Tablet;16603.00;65
 Celular;86262.00;65
-Audifonos;16675.00;51
-Impresora;56159.00;36
 ```
 
-## Estado de la entrega 2
+## Archivos agregados para la entrega
 
-La entrega queda como una version preliminar funcional del proyecto completo.
+- `entrega_2_semana_5.txt`: indica que partes estan listas y que falta mejorar.
+- `DIFERENCIAS_SEMANA_5.md`: explica las diferencias entre la semana anterior y esta entrega.
 
-Incluye:
+## Pendiente
 
-- Generacion automatica de datos de prueba.
-- Lectura de productos, vendedores y ventas.
-- Reporte de vendedores por recaudo.
-- Reporte de productos por cantidad vendida.
-- Documento de estado de la entrega: `entrega_2_semana_5.txt`.
-- Lista separada de diferencias frente a la semana anterior: `DIFERENCIAS_SEMANA_5.md`.
+Para la entrega final todavia se puede mejorar:
 
-Pendiente para la entrega final:
+- Hacer mas pruebas con archivos incorrectos.
+- Revisar mejor la documentacion del codigo.
+- Crear el archivo `conslusion.txt` que se pide para la entrega final.
 
-- Ampliar pruebas con archivos erroneos.
-- Ajustar detalles finales segun retroalimentacion del docente.
-- Crear el archivo `conslusion.txt` solicitado para la entrega final.
+## Nota
+
+Los datos cambian cada vez que se ejecuta `GenerateInfoFiles`, porque se generan de forma pseudoaleatoria.
