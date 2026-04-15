@@ -1,5 +1,5 @@
-TI;96458095;Paula;Martinez
-CC;27812740;Camila;Suarez
-CE;77218692;Laura;Martinez
-TI;27578224;Mariana;Garcia
-TI;58346050;Felipe;Suarez
+CC;83566791;Daniela;Lopez
+CE;72791908;Paula;Rodriguez
+TI;70228856;Felipe;Morales
+CE;77838217;Julian;Suarez
+CC;77192288;Laura;Hernandez

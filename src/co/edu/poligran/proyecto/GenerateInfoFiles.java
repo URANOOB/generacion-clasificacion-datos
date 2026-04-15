@@ -30,6 +30,7 @@ public class GenerateInfoFiles {
     public static void main(String[] args) {
         try {
             createOutputFolder();
+            deletePreviousSalesFiles();
             createProductsFile(10);
             createSalesManInfoFile(5);
 
@@ -55,6 +56,24 @@ public class GenerateInfoFiles {
         File folder = new File(OUTPUT_FOLDER);
         if (!folder.exists()) {
             folder.mkdirs();
+        }
+    }
+
+    /**
+     * Elimina archivos de ventas generados en ejecuciones anteriores.
+     */
+    private static void deletePreviousSalesFiles() {
+        File folder = new File(OUTPUT_FOLDER);
+        File[] files = folder.listFiles();
+
+        if (files == null) {
+            return;
+        }
+
+        for (File file : files) {
+            if (file.isFile() && file.getName().startsWith("sales_") && file.getName().endsWith(".txt")) {
+                file.delete();
+            }
         }
     }
 
