@@ -2,24 +2,7 @@ Entrega 2 - Semana 5
 Generacion y clasificacion de datos
 
 Estado de la entrega:
-El proyecto contiene una version preliminar funcional del desarrollo completo solicitado.
-
-Partes implementadas:
-- Clase GenerateInfoFiles con metodo main para generar archivos planos de prueba.
-- Archivo products.txt con productos pseudoaleatorios.
-- Archivo salesmen_info.txt con vendedores pseudoaleatorios.
-- Archivos sales_*.txt con ventas pseudoaleatorias por vendedor.
-- Clase main con metodo main para leer los archivos de entrada.
-- Generacion del reporte files/salesmen_report.csv, ordenado por dinero recaudado de mayor a menor.
-- Generacion del reporte files/products_report.csv, ordenado por cantidad vendida de mayor a menor.
-- Validacion basica de formatos, productos no registrados, vendedores no registrados y cantidades negativas.
-- Soporte para procesar mas de un archivo de ventas por vendedor, acumulando sus ventas.
-
-Partes pendientes o por mejorar para la entrega final:
-- Revisar con el docente si el reporte de productos debe incluir solamente nombre y precio, o tambien cantidad vendida. En esta version se incluye nombre, precio y cantidad para que el ordenamiento sea verificable.
-- Agregar mas pruebas con archivos invalidos para documentar los casos de error.
-- Ajustar detalles finales de documentacion y presentacion del repositorio antes de la sustentacion.
-- Crear el archivo conslusion.txt solicitado para la entrega final de las semanas 7 y 8.
+El proyecto contiene una version preliminar funcional del desarrollo completo solicitado correspondiente a la semana 5
 
 Instrucciones de ejecucion:
 1. Ejecutar la clase co.edu.poligran.proyecto.GenerateInfoFiles.
