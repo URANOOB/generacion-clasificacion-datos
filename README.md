@@ -169,7 +169,3 @@ Pendiente para la entrega final:
 - Ampliar pruebas con archivos erroneos.
 - Ajustar detalles finales segun retroalimentacion del docente.
 - Crear el archivo `conslusion.txt` solicitado para la entrega final.
-
-## Autor
-
-Proyecto desarrollado en Eclipse como parte del proceso academico de generacion y clasificacion de datos en Java.
