@@ -62,47 +62,6 @@ Despues se ejecuta la clase:
 main
 ```
 
-Esta clase lee los archivos y genera los reportes.
-
-## Ejemplo de productos
-
-```text
-P001;Teclado;138714,00
-P002;Mouse;191948,00
-P003;Monitor;50922,00
-```
-
-El formato usado es:
-
-```text
-IDProducto;NombreProducto;Precio
-```
-
-## Ejemplo de vendedores
-
-```text
-CC;83566791;Daniela;Lopez
-CE;72791908;Paula;Rodriguez
-TI;70228856;Felipe;Morales
-```
-
-El formato usado es:
-
-```text
-TipoDocumento;NumeroDocumento;Nombre;Apellido
-```
-
-## Ejemplo de ventas
-
-```text
-CC;83566791
-P010;5;
-P001;9;
-P003;19;
-```
-
-La primera linea identifica al vendedor. Las demas lineas indican el producto vendido y la cantidad.
-
 ## Reportes generados
 
 ### Reporte de vendedores
@@ -128,20 +87,3 @@ Monitor;50922.00;73
 Tablet;16603.00;65
 Celular;86262.00;65
 ```
-
-## Archivos agregados para la entrega
-
-- `entrega_2_semana_5.txt`: indica que partes estan listas y que falta mejorar.
-- `DIFERENCIAS_SEMANA_5.md`: explica las diferencias entre la semana anterior y esta entrega.
-
-## Pendiente
-
-Para la entrega final todavia se puede mejorar:
-
-- Hacer mas pruebas con archivos incorrectos.
-- Revisar mejor la documentacion del codigo.
-- Crear el archivo `conslusion.txt` que se pide para la entrega final.
-
-## Nota
-
-Los datos cambian cada vez que se ejecuta `GenerateInfoFiles`, porque se generan de forma pseudoaleatoria.
