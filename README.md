@@ -24,9 +24,7 @@ Para esta entrega se avanzo un poco mas y ya se agrego una parte preliminar del 
 
 - Java 8.
 - Eclipse IDE.
-- Archivos de texto `.txt`.
 - Archivos `.csv`.
-- Git y GitHub.
 
 ## Archivos principales
 
@@ -46,7 +44,7 @@ files/
   salesmen_report.csv
 ```
 
-## Como se ejecuta
+## Como se ejecuta?
 
 Primero se debe ejecutar la clase:
 
