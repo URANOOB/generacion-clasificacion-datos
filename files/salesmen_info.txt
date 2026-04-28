@@ -1,5 +1,5 @@
-CC;83566791;Daniela;Lopez
-CE;72791908;Paula;Rodriguez
-TI;70228856;Felipe;Morales
-CE;77838217;Julian;Suarez
-CC;77192288;Laura;Hernandez
+CE;33944009;Daniela;Vargas
+CC;26712957;Valentina;Morales
+CC;22865012;Juan;Castro
+TI;54615749;Laura;Garcia
+CE;34383824;Juan;Rojas

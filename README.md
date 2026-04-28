@@ -4,11 +4,9 @@ Este proyecto fue realizado en **Java** usando **Eclipse**.
 
 La idea del proyecto es generar archivos de prueba con datos de productos, vendedores y ventas. Luego se leen esos archivos para crear reportes que muestran cuanto vendio cada vendedor y que productos se vendieron mas.
 
-## Entrega 2 - Semana 5
+## Entrega final - Semanas 7 y 8
 
-En la entrega anterior el proyecto estaba enfocado principalmente en generar archivos planos.
-
-Para esta entrega se avanzo un poco mas y ya se agrego una parte preliminar del programa completo. Ahora el proyecto no solo genera los datos, sino que tambien los lee y crea reportes.
+En la primera parte del proyecto se trabajo la generacion de archivos planos. Despues se agrego la parte de lectura y generacion de reportes. En esta entrega final ya queda armado el proyecto completo con las dos clases principales que pide la actividad.
 
 ## Que hace el proyecto
 
@@ -67,9 +65,9 @@ Esta clase lee los archivos y genera los reportes.
 ## Ejemplo de productos
 
 ```text
-P001;Teclado;138714,00
-P002;Mouse;191948,00
-P003;Monitor;50922,00
+P001;Teclado;167134,00
+P002;Mouse;59569,00
+P003;Monitor;145759,00
 ```
 
 El formato usado es:
@@ -81,9 +79,9 @@ IDProducto;NombreProducto;Precio
 ## Ejemplo de vendedores
 
 ```text
-CC;83566791;Daniela;Lopez
-CE;72791908;Paula;Rodriguez
-TI;70228856;Felipe;Morales
+TI;27087157;Carlos;Vargas
+CC;76003117;Mariana;Morales
+CE;82798565;Paula;Vargas
 ```
 
 El formato usado es:
@@ -95,10 +93,10 @@ TipoDocumento;NumeroDocumento;Nombre;Apellido
 ## Ejemplo de ventas
 
 ```text
-CC;83566791
-P010;5;
-P001;9;
-P003;19;
+CC;18886029
+P001;10;
+P004;3;
+P009;10;
 ```
 
 La primera linea identifica al vendedor. Las demas lineas indican el producto vendido y la cantidad.
@@ -112,9 +110,9 @@ El archivo `salesmen_report.csv` muestra los vendedores ordenados desde el que r
 Ejemplo:
 
 ```text
-Laura Hernandez;6336035.00
-Julian Suarez;6112755.00
-Felipe Morales;4779938.00
+Camila Martinez;12169196.00
+Paula Torres;11827953.00
+Mariana Morales;10941165.00
 ```
 
 ### Reporte de productos
@@ -124,23 +122,26 @@ El archivo `products_report.csv` muestra los productos ordenados por cantidad ve
 Ejemplo:
 
 ```text
-Monitor;50922.00;73
-Tablet;16603.00;65
-Celular;86262.00;65
+Audifonos;180390.00;82
+Impresora;69303.00;76
+Portatil;10250.00;72
 ```
 
 ## Archivos agregados para la entrega
 
 - `entrega_2_semana_5.txt`: indica que partes estan listas y que falta mejorar.
 - `DIFERENCIAS_SEMANA_5.md`: explica las diferencias entre la semana anterior y esta entrega.
+- `conslusion.txt`: contiene la reflexion final sobre lo aprendido, posibles aplicaciones y dificultades del proyecto.
 
-## Pendiente
+## Estado actual
 
-Para la entrega final todavia se puede mejorar:
+En este momento el proyecto ya cuenta con:
 
-- Hacer mas pruebas con archivos incorrectos.
-- Revisar mejor la documentacion del codigo.
-- Crear el archivo `conslusion.txt` que se pide para la entrega final.
+- La clase `GenerateInfoFiles` para generar los archivos de entrada.
+- La clase `main` para leer esos archivos y generar los reportes.
+- Reporte de vendedores ordenado por dinero recaudado.
+- Reporte de productos ordenado por cantidad vendida.
+- El archivo `conslusion.txt` solicitado en la guia.
 
 ## Nota
 

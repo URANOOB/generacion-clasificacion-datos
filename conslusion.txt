@@ -1,0 +1,17 @@
+1. Lo aprendido durante el desarrollo del proyecto
+
+Durante este proyecto aprendi varias cosas basicas pero importantes de programacion en Java. La primera fue organizar mejor un programa en clases, en este caso separando productos, vendedores, repositorio de datos, generacion de archivos y procesamiento de reportes. Tambien aprendi a leer y escribir archivos de texto, que fue una parte clave del trabajo porque toda la informacion del proyecto se maneja por medio de archivos planos.
+
+Otra cosa que me dejo este proyecto fue entender mejor como recorrer datos, hacer calculos y ordenar resultados. Al principio parecia algo simple, pero cuando toco relacionar productos, vendedores y ventas, ya fue necesario pensar con mas cuidado la logica. Tambien me sirvio para practicar el uso de metodos, validaciones basicas y una forma un poco mas ordenada de programar.
+
+2. Posibles aplicaciones en la vida profesional
+
+Aunque este proyecto es academico y sencillo, siento que tiene relacion con cosas que si pueden pasar en la vida laboral. Muchas empresas trabajan con archivos, reportes, bases de datos o informacion de ventas, asi que entender como procesar datos y convertirlos en resultados utiles puede servir bastante. Por ejemplo, se puede aplicar para organizar inventarios, revisar ventas, generar reportes internos o automatizar tareas que a mano serian mas demoradas.
+
+Tambien creo que este proyecto ayuda a desarrollar una manera de pensar mas analitica. No solo se trata de escribir codigo, sino de entender un problema, dividirlo en partes y proponer una solucion clara. Esa forma de trabajo puede servir en cualquier area de tecnologia.
+
+3. Dificultades presentadas durante el desarrollo del proyecto
+
+La dificultad principal fue pasar de una idea general a una solucion completa. Generar archivos fue una parte manejable, pero despues vino el reto de leerlos bien, cruzar la informacion y asegurar que el resultado final tuviera sentido. Otro punto complicado fue mantener consistencia entre los archivos generados y los reportes, porque si cambia la informacion de entrada, tambien deben cambiar los resultados.
+
+Tambien hubo detalles pequenos que tomaron tiempo, como definir bien el formato de los archivos, ordenar los vendedores y productos de forma correcta, y revisar que solo existieran las dos clases con metodo main que pide la actividad. En general no fue un proyecto imposible, pero si fue de esos trabajos donde uno aprende mas cuando se equivoca, corrige y vuelve a probar.
