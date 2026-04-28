@@ -105,7 +105,7 @@ La primera linea identifica al vendedor. Las demas lineas indican el producto ve
 
 ### Reporte de vendedores
 
-El archivo `salesmen_report.csv` muestra los vendedores ordenados desde el que recaudo mas dinero hasta el que recaudo menos.
+El archivo `salesmen_report.csv` muestra los vendedores ordenados desde el que obtuvo mas dinero hasta el que menos
 
 Ejemplo:
 
@@ -117,7 +117,7 @@ Mariana Morales;10941165.00
 
 ### Reporte de productos
 
-El archivo `products_report.csv` muestra los productos ordenados por cantidad vendida.
+El archivo `products_report.csv` muestra los productos ordenados por cantidad vendida
 
 Ejemplo:
 
@@ -126,23 +126,3 @@ Audifonos;180390.00;82
 Impresora;69303.00;76
 Portatil;10250.00;72
 ```
-
-## Archivos agregados para la entrega
-
-- `entrega_2_semana_5.txt`: indica que partes estan listas y que falta mejorar.
-- `DIFERENCIAS_SEMANA_5.md`: explica las diferencias entre la semana anterior y esta entrega.
-- `conslusion.txt`: contiene la reflexion final sobre lo aprendido, posibles aplicaciones y dificultades del proyecto.
-
-## Estado actual
-
-En este momento el proyecto ya cuenta con:
-
-- La clase `GenerateInfoFiles` para generar los archivos de entrada.
-- La clase `main` para leer esos archivos y generar los reportes.
-- Reporte de vendedores ordenado por dinero recaudado.
-- Reporte de productos ordenado por cantidad vendida.
-- El archivo `conslusion.txt` solicitado en la guia.
-
-## Nota
-
-Los datos cambian cada vez que se ejecuta `GenerateInfoFiles`, porque se generan de forma pseudoaleatoria.
