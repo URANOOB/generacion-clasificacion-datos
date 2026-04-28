@@ -1,5 +1,5 @@
-TI;45382816;Juan;Morales
-TI;56540355;Felipe;Hernandez
-TI;26403652;Mateo;Gomez
-TI;77418692;Juan;Hernandez
-CC;34781741;Laura;Hernandez
+CE;41966923;Laura;Morales
+CC;99121423;Paula;Lopez
+CC;76503329;Sofia;Castro
+CE;82438047;Mariana;Diaz
+CC;74356917;Sebastian;Lopez
