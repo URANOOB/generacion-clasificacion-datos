@@ -305,7 +305,14 @@ public class main {
     private static void writeSalesmenReport(List<SalesmanSalesReport> reports) throws IOException {
         Collections.sort(reports, new Comparator<SalesmanSalesReport>() {
             public int compare(SalesmanSalesReport first, SalesmanSalesReport second) {
-                return Double.compare(second.getTotalSales(), first.getTotalSales());
+                int totalSalesComparison = Double.compare(second.getTotalSales(), first.getTotalSales());
+                if (totalSalesComparison != 0) {
+                    return totalSalesComparison;
+                }
+
+                String firstFullName = first.getSalesman().getFirstName() + " " + first.getSalesman().getLastName();
+                String secondFullName = second.getSalesman().getFirstName() + " " + second.getSalesman().getLastName();
+                return firstFullName.compareTo(secondFullName);
             }
         });
 
@@ -331,7 +338,12 @@ public class main {
         List<ProductSalesReport> reports = new ArrayList<ProductSalesReport>(reportsById.values());
         Collections.sort(reports, new Comparator<ProductSalesReport>() {
             public int compare(ProductSalesReport first, ProductSalesReport second) {
-                return Integer.compare(second.getQuantitySold(), first.getQuantitySold());
+                int quantityComparison = Integer.compare(second.getQuantitySold(), first.getQuantitySold());
+                if (quantityComparison != 0) {
+                    return quantityComparison;
+                }
+
+                return first.getProduct().getName().compareTo(second.getProduct().getName());
             }
         });
 

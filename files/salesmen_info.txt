@@ -1,5 +1,5 @@
-CE;33944009;Daniela;Vargas
-CC;26712957;Valentina;Morales
-CC;22865012;Juan;Castro
-TI;54615749;Laura;Garcia
-CE;34383824;Juan;Rojas
+TI;45382816;Juan;Morales
+TI;56540355;Felipe;Hernandez
+TI;26403652;Mateo;Gomez
+TI;77418692;Juan;Hernandez
+CC;34781741;Laura;Hernandez
